@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 82.0, 63.0, 1058.0, 1023.0 ],
+		"rect" : [ 34.0, 64.0, 1037.0, 1023.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,387 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-79",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1145.0, 17.0, 100.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-77",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "jit_gl_texture", "", "" ],
+					"patching_rect" : [ 324.0, 901.0, 353.0, 22.0 ],
+					"text" : "jit.gl.pass @fxname bloom-hq @bloom_amt 0.9 @threshold 0.97"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-68",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 92.0, 572.0, 29.5, 22.0 ],
+					"text" : "- 33"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"format" : 6,
+					"id" : "obj-67",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 36.0, 536.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-48",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 45.0, 369.0, 64.0, 22.0 ],
+					"text" : "snapshot~"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "rate_1",
+					"id" : "obj-11",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 43.5, 26.0, 185.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "rate_2",
+					"id" : "obj-17",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 43.5, 53.0, 185.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "listen_1",
+					"id" : "obj-18",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 239.5, 26.0, 150.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "listen_2",
+					"id" : "obj-19",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 239.5, 53.0, 150.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "rate_3",
+					"id" : "obj-20",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 44.5, 80.0, 184.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "rate_4",
+					"id" : "obj-21",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 43.5, 107.0, 185.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "listen_3",
+					"id" : "obj-22",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 239.5, 80.0, 150.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "listen_4",
+					"id" : "obj-23",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 239.5, 107.0, 150.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "probability_1",
+					"id" : "obj-24",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 401.5, 26.0, 150.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "probability_2",
+					"id" : "obj-25",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 401.5, 53.0, 150.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "probability_3",
+					"id" : "obj-27",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 401.5, 80.0, 150.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "probability_4",
+					"id" : "obj-28",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 401.5, 107.0, 150.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "perc_2/duration",
+					"id" : "obj-29",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 565.5, 53.0, 150.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "perc_2/volume",
+					"id" : "obj-32",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 722.5, 53.0, 150.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "perc_1/duration",
+					"id" : "obj-34",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 565.5, 26.0, 150.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "perc_1/volume",
+					"id" : "obj-35",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 722.5, 26.0, 150.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "percc_4/duration",
+					"id" : "obj-36",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 565.5, 107.0, 150.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "percc_4/volume",
+					"id" : "obj-37",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 722.5, 107.0, 150.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "perc_3/duration",
+					"id" : "obj-39",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 565.5, 80.0, 150.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "perc_3/volume",
+					"id" : "obj-40",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 722.5, 80.0, 150.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 2,
+					"outlettype" : [ "jit_matrix", "" ],
+					"patching_rect" : [ 808.0, 960.0, 40.0, 22.0 ],
+					"text" : "jit.vcr"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"format" : 6,
+					"id" : "obj-31",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 382.0, 731.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "newobj",
+					"numinlets" : 4,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 775.0, 725.0, 81.0, 22.0 ],
+					"text" : "pak 1. 0. 1. 1."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 696.0, 744.0, 82.0, 22.0 ],
+					"text" : "prepend color"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-38",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "jit_gl_texture", "", "" ],
+					"patching_rect" : [ 775.75, 146.0, 194.0, 22.0 ],
+					"text" : "jit.gl.node @capture 1 @name uhh"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"format" : 6,
 					"id" : "obj-182",
@@ -124,25 +505,13 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-108",
-					"maxclass" : "newobj",
-					"numinlets" : 8,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 844.5, 681.0, 92.5, 22.0 ],
-					"text" : "jit.gl.material"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-97",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "jit_gl_texture", "", "" ],
-					"patching_rect" : [ 296.75, 662.0, 59.0, 22.0 ],
-					"text" : "jit.gl.pass"
+					"patching_rect" : [ 121.5, 647.0, 347.0, 22.0 ],
+					"text" : "jit.gl.pass @fxname bloom-hq @bloom_amt 0.9 @threshold 0.8"
 				}
 
 			}
@@ -176,8 +545,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 527.5, 711.0, 352.0, 22.0 ],
-					"text" : "jit.gl.gridshape uhh @automatic 0 @shape line @color 0. 1. 0. 1."
+					"patching_rect" : [ 527.5, 787.0, 379.0, 22.0 ],
+					"text" : "jit.gl.gridshape uhh @automatic 0 @shape line @color 0.8 0.4 0.99 1."
 				}
 
 			}
@@ -185,11 +554,11 @@
 				"box" : 				{
 					"id" : "obj-87",
 					"maxclass" : "newobj",
-					"numinlets" : 4,
+					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 534.0, 638.0, 344.0, 22.0 ],
-					"text" : "jit.gl.multiple uhh 4 @glparams position scale @color 0. 1. 0. 1."
+					"text" : "jit.gl.multiple uhh 2 @glparams position scale @color 1. 1. 1. 1."
 				}
 
 			}
@@ -207,31 +576,6 @@
 			}
 , 			{
 				"box" : 				{
-					"format" : 6,
-					"id" : "obj-48",
-					"maxclass" : "flonum",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 970.0, 189.0, 50.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-44",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 886.25, 237.0, 116.0, 22.0 ],
-					"text" : "prepend slide_down"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-43",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -244,25 +588,13 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-38",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "jit_gl_texture", "", "" ],
-					"patching_rect" : [ 808.0, 194.0, 129.0, 22.0 ],
-					"text" : "jit.gl.node @name uhh"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-47",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "jit_matrix", "bang", "" ],
-					"patching_rect" : [ 783.0, 365.5, 249.0, 22.0 ],
-					"text" : "jit.world game @fps 60 @erase_color 0 0 0 1"
+					"patching_rect" : [ 783.0, 365.5, 347.0, 22.0 ],
+					"text" : "jit.world game @output_matrix 1 @fps 30 @erase_color 0 0 0 1"
 				}
 
 			}
@@ -605,19 +937,6 @@
 			}
 , 			{
 				"box" : 				{
-					"attr" : "listen_4",
-					"id" : "obj-29",
-					"maxclass" : "attrui",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 220.0, 146.0, 150.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"format" : 6,
 					"id" : "obj-26",
 					"maxclass" : "flonum",
@@ -625,7 +944,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 641.75, 245.0, 50.0, 22.0 ]
+					"patching_rect" : [ 627.0, 245.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -638,7 +957,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 577.5, 245.0, 50.0, 22.0 ]
+					"patching_rect" : [ 565.5, 245.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -651,7 +970,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 513.25, 245.0, 50.0, 22.0 ]
+					"patching_rect" : [ 508.25, 245.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -711,7 +1030,7 @@
 					"numoutlets" : 5,
 					"outlettype" : [ "signal", "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 177.0, 283.0, 48.0, 144.0 ],
+					"patching_rect" : [ 176.0, 255.0, 48.0, 144.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.gain~",
@@ -738,7 +1057,7 @@
 ,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 7,
+					"numoutlets" : 8,
 					"outletInfo" : 					{
 						"IOInfo" : [ 							{
 								"type" : "signal",
@@ -776,14 +1095,20 @@
 								"tag" : "out6",
 								"comment" : ""
 							}
+, 							{
+								"type" : "midi",
+								"index" : -1,
+								"tag" : "",
+								"comment" : ""
+							}
  ]
 					}
 ,
-					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "list" ],
-					"patching_rect" : [ 259.0, 223.0, 102.0, 22.0 ],
+					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "int", "list" ],
+					"patching_rect" : [ 259.0, 223.0, 140.0, 22.0 ],
 					"rnboattrcache" : 					{
-						"listen_4" : 						{
-							"label" : "listen_4",
+						"probability_1" : 						{
+							"label" : "probability_1",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -794,38 +1119,38 @@
 							"parsestring" : ""
 						}
 ,
-						"listen_2" : 						{
-							"label" : "listen_2",
+						"rate_4" : 						{
+							"label" : "rate_4",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"run_4" : 						{
-							"label" : "run_4",
+						"perc_3/volume" : 						{
+							"label" : "volume",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"run_2" : 						{
-							"label" : "run_2",
+						"probability_2" : 						{
+							"label" : "probability_2",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"rate_2" : 						{
-							"label" : "rate_2",
+						"listen_4" : 						{
+							"label" : "listen_4",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"run_3" : 						{
-							"label" : "run_3",
+						"perc_2/volume" : 						{
+							"label" : "volume",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"run_1" : 						{
-							"label" : "run_1",
+						"percc_4/duration" : 						{
+							"label" : "duration",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -836,8 +1161,38 @@
 							"parsestring" : ""
 						}
 ,
-						"rate_3" : 						{
-							"label" : "rate_3",
+						"probability_3" : 						{
+							"label" : "probability_3",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"perc_1/volume" : 						{
+							"label" : "volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"perc_3/duration" : 						{
+							"label" : "duration",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"rate_2" : 						{
+							"label" : "rate_2",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"probability_4" : 						{
+							"label" : "probability_4",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"perc_2/duration" : 						{
+							"label" : "duration",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -848,10 +1203,52 @@
 							"parsestring" : ""
 						}
 ,
-						"rate_4" : 						{
-							"label" : "rate_4",
+						"listen_2" : 						{
+							"label" : "listen_2",
 							"isEnum" : 0,
 							"parsestring" : ""
+						}
+,
+						"rate_3" : 						{
+							"label" : "rate_3",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"perc_1/duration" : 						{
+							"label" : "duration",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"percc_4/volume" : 						{
+							"label" : "volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"run_1" : 						{
+							"label" : "run_1",
+							"isEnum" : 1,
+							"parsestring" : "off on"
+						}
+,
+						"run_2" : 						{
+							"label" : "run_2",
+							"isEnum" : 1,
+							"parsestring" : "off on"
+						}
+,
+						"run_3" : 						{
+							"label" : "run_3",
+							"isEnum" : 1,
+							"parsestring" : "off on"
+						}
+,
+						"run_4" : 						{
+							"label" : "run_4",
+							"isEnum" : 1,
+							"parsestring" : "off on"
 						}
 
 					}
@@ -883,12 +1280,58 @@
 						"subtype" : "Undefined",
 						"embed" : 1,
 						"snapshot" : 						{
+							"probability_4" : 							{
+								"value" : 0.51
+							}
+,
+							"run_4" : 							{
+								"value" : 1.0
+							}
+,
 							"__sps" : 							{
+								"p_obj-140" : 								{
+									"__sps" : 									{
+										"p_obj-1" : 										{
+
+										}
+
+									}
+
+								}
+,
+								"perc_3" : 								{
+									"duration" : 									{
+										"value" : 0.01
+									}
+,
+									"volume" : 									{
+										"value" : -3.0
+									}
+
+								}
+,
 								"p_obj-26" : 								{
 
 								}
 ,
-								"p_obj-50" : 								{
+								"perc_1" : 								{
+									"duration" : 									{
+										"value" : 0.8
+									}
+,
+									"volume" : 									{
+										"value" : 2.2
+									}
+
+								}
+,
+								"p_obj-79" : 								{
+									"__sps" : 									{
+										"p_obj-1" : 										{
+
+										}
+
+									}
 
 								}
 ,
@@ -897,6 +1340,52 @@
 								}
 ,
 								"p_obj-105" : 								{
+
+								}
+,
+								"perc_2" : 								{
+									"duration" : 									{
+										"value" : 0.1
+									}
+,
+									"volume" : 									{
+										"value" : -14.0
+									}
+
+								}
+,
+								"p_obj-2" : 								{
+									"__sps" : 									{
+										"p_obj-1" : 										{
+
+										}
+
+									}
+
+								}
+,
+								"p_obj-142" : 								{
+									"__sps" : 									{
+										"p_obj-1" : 										{
+
+										}
+
+									}
+
+								}
+,
+								"percc_4" : 								{
+									"duration" : 									{
+										"value" : 0.01
+									}
+,
+									"volume" : 									{
+										"value" : -4.0
+									}
+
+								}
+,
+								"p_obj-50" : 								{
 
 								}
 ,
@@ -910,49 +1399,57 @@
 								"value" : 0.0
 							}
 ,
-							"run_4" : 							{
-								"value" : 0.0
+							"rate_3" : 							{
+								"value" : 4.2
 							}
 ,
-							"listen_3" : 							{
-								"value" : 0.0
+							"probability_3" : 							{
+								"value" : 0.933
 							}
 ,
 							"run_3" : 							{
 								"value" : 1.0
 							}
 ,
-							"__presetid" : "pco.4percz",
-							"listen_2" : 							{
-								"value" : 0.19
+							"listen_3" : 							{
+								"value" : 1.0
 							}
 ,
 							"rate_2" : 							{
-								"value" : 2.3
+								"value" : 5.720000000000002
 							}
 ,
 							"run_2" : 							{
 								"value" : 1.0
 							}
 ,
-							"listen_1" : 							{
-								"value" : 0.0
+							"__presetid" : "pulse.4voice_perc",
+							"listen_2" : 							{
+								"value" : 0.7
 							}
 ,
 							"rate_1" : 							{
-								"value" : 1.14
+								"value" : 3.4
 							}
 ,
-							"rate_3" : 							{
-								"value" : 0.95
+							"probability_1" : 							{
+								"value" : 0.5
 							}
 ,
 							"rate_4" : 							{
-								"value" : 1.0
+								"value" : 7.0
 							}
 ,
 							"run_1" : 							{
 								"value" : 1.0
+							}
+,
+							"listen_1" : 							{
+								"value" : 0.5
+							}
+,
+							"probability_2" : 							{
+								"value" : 0.49
 							}
 
 						}
@@ -964,17 +1461,63 @@
 									"version" : 2,
 									"minorversion" : 0,
 									"name" : "pco.4voice",
-									"origin" : "pco.4percz",
+									"origin" : "pulse.4voice_perc",
 									"type" : "rnbo",
 									"subtype" : "",
 									"embed" : 1,
 									"snapshot" : 									{
+										"probability_4" : 										{
+											"value" : 0.51
+										}
+,
+										"run_4" : 										{
+											"value" : 1.0
+										}
+,
 										"__sps" : 										{
+											"p_obj-140" : 											{
+												"__sps" : 												{
+													"p_obj-1" : 													{
+
+													}
+
+												}
+
+											}
+,
+											"perc_3" : 											{
+												"duration" : 												{
+													"value" : 0.01
+												}
+,
+												"volume" : 												{
+													"value" : -3.0
+												}
+
+											}
+,
 											"p_obj-26" : 											{
 
 											}
 ,
-											"p_obj-50" : 											{
+											"perc_1" : 											{
+												"duration" : 												{
+													"value" : 0.8
+												}
+,
+												"volume" : 												{
+													"value" : 2.2
+												}
+
+											}
+,
+											"p_obj-79" : 											{
+												"__sps" : 												{
+													"p_obj-1" : 													{
+
+													}
+
+												}
 
 											}
 ,
@@ -983,6 +1526,52 @@
 											}
 ,
 											"p_obj-105" : 											{
+
+											}
+,
+											"perc_2" : 											{
+												"duration" : 												{
+													"value" : 0.1
+												}
+,
+												"volume" : 												{
+													"value" : -14.0
+												}
+
+											}
+,
+											"p_obj-2" : 											{
+												"__sps" : 												{
+													"p_obj-1" : 													{
+
+													}
+
+												}
+
+											}
+,
+											"p_obj-142" : 											{
+												"__sps" : 												{
+													"p_obj-1" : 													{
+
+													}
+
+												}
+
+											}
+,
+											"percc_4" : 											{
+												"duration" : 												{
+													"value" : 0.01
+												}
+,
+												"volume" : 												{
+													"value" : -4.0
+												}
+
+											}
+,
+											"p_obj-50" : 											{
 
 											}
 ,
@@ -996,49 +1585,57 @@
 											"value" : 0.0
 										}
 ,
-										"run_4" : 										{
-											"value" : 0.0
+										"rate_3" : 										{
+											"value" : 4.2
 										}
 ,
-										"listen_3" : 										{
-											"value" : 0.0
+										"probability_3" : 										{
+											"value" : 0.933
 										}
 ,
 										"run_3" : 										{
 											"value" : 1.0
 										}
 ,
-										"__presetid" : "pco.4percz",
-										"listen_2" : 										{
-											"value" : 0.19
+										"listen_3" : 										{
+											"value" : 1.0
 										}
 ,
 										"rate_2" : 										{
-											"value" : 2.3
+											"value" : 5.720000000000002
 										}
 ,
 										"run_2" : 										{
 											"value" : 1.0
 										}
 ,
-										"listen_1" : 										{
-											"value" : 0.0
+										"__presetid" : "pulse.4voice_perc",
+										"listen_2" : 										{
+											"value" : 0.7
 										}
 ,
 										"rate_1" : 										{
-											"value" : 1.14
+											"value" : 3.4
 										}
 ,
-										"rate_3" : 										{
-											"value" : 0.95
+										"probability_1" : 										{
+											"value" : 0.5
 										}
 ,
 										"rate_4" : 										{
-											"value" : 1.0
+											"value" : 7.0
 										}
 ,
 										"run_1" : 										{
 											"value" : 1.0
+										}
+,
+										"listen_1" : 										{
+											"value" : 0.5
+										}
+,
+										"probability_2" : 										{
+											"value" : 0.49
 										}
 
 									}
@@ -1048,7 +1645,7 @@
 										"filename" : "pco.4voice.maxsnap",
 										"filepath" : "~/.app-folders/Max 8/Snapshots",
 										"filepos" : -1,
-										"snapshotfileid" : "240f5d1c318414aa245ea2e76d11c8a0"
+										"snapshotfileid" : "70a9bd8a1be88344eaa8fd2f54b286f0"
 									}
 
 								}
@@ -1057,207 +1654,8 @@
 
 					}
 ,
-					"text" : "rnbo~ pco.4percz",
+					"text" : "rnbo~ pulse.4voice_perc",
 					"varname" : "rnbo~"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"attr" : "rate_1",
-					"id" : "obj-18",
-					"maxclass" : "attrui",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 374.0, 59.0, 150.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"attr" : "rate_2",
-					"id" : "obj-19",
-					"maxclass" : "attrui",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 374.0, 88.0, 150.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"attr" : "rate_3",
-					"id" : "obj-20",
-					"maxclass" : "attrui",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 374.0, 116.0, 150.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"attr" : "rate_4",
-					"id" : "obj-21",
-					"maxclass" : "attrui",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 374.0, 146.0, 150.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"attr" : "run_1",
-					"displaymode" : 8,
-					"id" : "obj-22",
-					"maxclass" : "attrui",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 63.0, 59.0, 150.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"attr" : "run_3",
-					"displaymode" : 8,
-					"id" : "obj-23",
-					"maxclass" : "attrui",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 63.0, 118.0, 150.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"attr" : "run_4",
-					"displaymode" : 8,
-					"id" : "obj-24",
-					"maxclass" : "attrui",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 63.0, 146.0, 150.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"attr" : "run_2",
-					"displaymode" : 8,
-					"id" : "obj-25",
-					"maxclass" : "attrui",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 63.0, 88.0, 150.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"attr" : "listen_1",
-					"id" : "obj-3",
-					"maxclass" : "attrui",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 220.0, 59.0, 150.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"attr" : "listen_2",
-					"id" : "obj-27",
-					"maxclass" : "attrui",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 220.0, 88.0, 150.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"attr" : "listen_3",
-					"id" : "obj-28",
-					"maxclass" : "attrui",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 220.0, 118.0, 150.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"attr" : "capture",
-					"id" : "obj-41",
-					"maxclass" : "attrui",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 808.0, 162.0, 150.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"attr" : "fxname",
-					"id" : "obj-98",
-					"maxclass" : "attrui",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 254.75, 599.0, 150.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"attr" : "bloom_amt",
-					"id" : "obj-99",
-					"maxclass" : "attrui",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 296.75, 632.0, 150.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"attr" : "threshold",
-					"id" : "obj-100",
-					"maxclass" : "attrui",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 92.5, 626.0, 150.0, 22.0 ]
 				}
 
 			}
@@ -1287,11 +1685,87 @@
 				}
 
 			}
+, 			{
+				"box" : 				{
+					"attr" : "slide_down",
+					"id" : "obj-6",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 740.5, 182.0, 150.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "bloom_amt",
+					"id" : "obj-7",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 121.5, 617.0, 150.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 750.0, 523.0, 51.0, 22.0 ],
+					"text" : "write 30"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 939.0, 493.0, 50.0, 22.0 ],
+					"text" : "stop $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "fxname",
+					"id" : "obj-78",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 85.0, 824.0, 150.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "bloom_amt",
+					"id" : "obj-41",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 324.0, 871.0, 150.0, 22.0 ]
+				}
+
+			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
-					"source" : [ "obj-1", 6 ]
+					"source" : [ "obj-1", 7 ]
 				}
 
 			}
@@ -1332,8 +1806,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-97", 0 ],
-					"source" : [ "obj-100", 0 ]
+					"destination" : [ "obj-8", 0 ],
+					"source" : [ "obj-10", 0 ]
 				}
 
 			}
@@ -1346,8 +1820,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-88", 0 ],
-					"source" : [ "obj-108", 0 ]
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-11", 0 ]
 				}
 
 			}
@@ -1355,6 +1829,14 @@
 				"patchline" : 				{
 					"destination" : [ "obj-33", 0 ],
 					"order" : 2,
+					"source" : [ "obj-110", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-48", 0 ],
+					"order" : 3,
 					"source" : [ "obj-110", 0 ]
 				}
 
@@ -1405,8 +1887,29 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-88", 0 ],
+					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-55", 0 ],
 					"source" : [ "obj-121", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-12", 0 ],
+					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-17", 0 ]
 				}
 
 			}
@@ -1524,8 +2027,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
+					"source" : [ "obj-31", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"source" : [ "obj-3", 0 ]
+					"source" : [ "obj-32", 0 ]
 				}
 
 			}
@@ -1538,6 +2048,34 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-34", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-35", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-36", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-37", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-49", 0 ],
 					"source" : [ "obj-38", 0 ]
 				}
@@ -1545,7 +2083,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-39", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-5", 1 ],
+					"order" : 1,
 					"source" : [ "obj-4", 1 ]
 				}
 
@@ -1553,13 +2099,37 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
+					"order" : 1,
 					"source" : [ "obj-4", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-38", 0 ],
+					"destination" : [ "obj-8", 1 ],
+					"order" : 0,
+					"source" : [ "obj-4", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"order" : 0,
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-40", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-77", 0 ],
 					"source" : [ "obj-41", 0 ]
 				}
 
@@ -1567,14 +2137,16 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-47", 0 ],
+					"order" : 1,
 					"source" : [ "obj-43", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-43", 0 ],
-					"source" : [ "obj-44", 0 ]
+					"destination" : [ "obj-8", 2 ],
+					"order" : 0,
+					"source" : [ "obj-43", 0 ]
 				}
 
 			}
@@ -1582,13 +2154,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-109", 0 ],
 					"source" : [ "obj-47", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-44", 0 ],
-					"source" : [ "obj-48", 0 ]
 				}
 
 			}
@@ -1636,6 +2201,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-43", 0 ],
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-55", 2 ],
 					"source" : [ "obj-62", 0 ]
 				}
@@ -1645,6 +2217,34 @@
 				"patchline" : 				{
 					"destination" : [ "obj-55", 1 ],
 					"source" : [ "obj-64", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-68", 0 ],
+					"source" : [ "obj-67", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"source" : [ "obj-68", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-97", 0 ],
+					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-77", 0 ],
+					"source" : [ "obj-78", 0 ]
 				}
 
 			}
@@ -1678,22 +2278,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"source" : [ "obj-9", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-111", 0 ],
 					"source" : [ "obj-91", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-97", 0 ],
-					"source" : [ "obj-98", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-97", 0 ],
-					"source" : [ "obj-99", 0 ]
 				}
 
 			}
@@ -1714,472 +2307,10 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "pco.4percz.rnbopat",
+				"name" : "pulse.4voice_perc.rnbopat",
 				"bootpath" : "~/PCO",
 				"patcherrelativepath" : ".",
 				"type" : "RBOP",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc1 Audio-1.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 1",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 1",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc1 Audio-10.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 1",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 1",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc1 Audio-11.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 1",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 1",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc1 Audio-12.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 1",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 1",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc1 Audio-13.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 1",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 1",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc1 Audio-14.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 1",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 1",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc1 Audio-15.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 1",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 1",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc1 Audio-2.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 1",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 1",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc1 Audio-3.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 1",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 1",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc1 Audio-4.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 1",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 1",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc1 Audio-5.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 1",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 1",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc1 Audio-6.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 1",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 1",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc1 Audio-7.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 1",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 1",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc1 Audio-8.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 1",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 1",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc1 Audio-9.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 1",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 1",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc1 Audio.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 1",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 1",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc2 Audio-1.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 2",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 2",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc2 Audio-10.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 2",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 2",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc2 Audio-11.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 2",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 2",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc2 Audio-12.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 2",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 2",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc2 Audio-13.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 2",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 2",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc2 Audio-14.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 2",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 2",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc2 Audio-15.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 2",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 2",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc2 Audio-16.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 2",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 2",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc2 Audio-2.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 2",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 2",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc2 Audio-3.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 2",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 2",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc2 Audio-4.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 2",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 2",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc2 Audio-5.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 2",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 2",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc2 Audio-6.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 2",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 2",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc2 Audio-7.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 2",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 2",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc2 Audio-8.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 2",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 2",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc2 Audio-9.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 2",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 2",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc2 Audio.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 2",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 2",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc3 Audio-1.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 3",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 3",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc3 Audio-10.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 3",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 3",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc3 Audio-11.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 3",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 3",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc3 Audio-12.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 3",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 3",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc3 Audio-13.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 3",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 3",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc3 Audio-14.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 3",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 3",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc3 Audio-15.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 3",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 3",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc3 Audio-2.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 3",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 3",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc3 Audio-3.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 3",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 3",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc3 Audio-4.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 3",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 3",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc3 Audio-5.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 3",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 3",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc3 Audio-6.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 3",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 3",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc3 Audio-7.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 3",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 3",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc3 Audio-8.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 3",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 3",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc3 Audio-9.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 3",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 3",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc3 Audio.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 3",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 3",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc4 Audio-1.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 4",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 4",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc4 Audio-10.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 4",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 4",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc4 Audio-11.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 4",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 4",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc4 Audio-12.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 4",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 4",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc4 Audio-13.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 4",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 4",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc4 Audio-14.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 4",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 4",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc4 Audio-15.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 4",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 4",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc4 Audio-16.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 4",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 4",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc4 Audio-2.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 4",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 4",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc4 Audio-3.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 4",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 4",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc4 Audio-4.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 4",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 4",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc4 Audio-5.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 4",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 4",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc4 Audio-6.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 4",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 4",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc4 Audio-7.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 4",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 4",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc4 Audio-8.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 4",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 4",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc4 Audio-9.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 4",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 4",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "perc4 Audio.mp3",
-				"bootpath" : "~/Music/coupled oscillator perc/perc 4",
-				"patcherrelativepath" : "../Music/coupled oscillator perc/perc 4",
-				"type" : "Mp3",
 				"implicit" : 1
 			}
  ],
